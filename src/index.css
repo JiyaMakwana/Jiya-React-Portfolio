@@ -1,7 +1,8 @@
 /* Force the entire website layout */
 body {
   background-color: #121212 !important;
-  color: #ffffff !important;            
+  color: #ffffff !important;    
+  overflow-x: hidden;        
 }
 
 :root {
