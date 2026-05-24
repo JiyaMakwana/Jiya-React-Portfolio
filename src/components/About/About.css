@@ -1,0 +1,143 @@
+/* .about-content-container{
+    min-viewport-height: 90%;
+} */
+
+.about-head{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.about-head p{
+    color:darkgray;
+    font-size: 14px;
+}
+.about-line{
+    width: 90px;
+    height: 8px;
+    background: linear-gradient(
+    90deg,
+    #43245f 25%,
+    #5b3478 50%,
+    #71468f 100%
+    );
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-bottom:50px;
+}
+.about-card{
+    border-radius: 12px;
+    background-color: #1e1e1e;
+}
+.about-card:hover{
+    color: #ffffff;
+    box-shadow:
+    0 4px 18px rgba(238, 236, 240, 0.28);
+    transition: all 0.3s ease;
+}
+.about-card-title{
+    color:#ffffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.about-card-info{
+    color:darkgray;
+    font-size: 14px;
+}
+
+.about-left-container p{
+    color:darkgray;
+    font-size: 18px;
+}
+.about-stats-bar{
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    width: 100%;
+}
+
+
+.stats-text{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+.stats-text h3 {
+  background: linear-gradient(
+    90deg,
+    #43245f 25%,
+    #5b3478 50%,
+    #71468f 100%
+    );
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+
+.stats-text p{
+    color:darkgray;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+.custom-border {
+    border-right: 2px solid rgba(146, 75, 243, 0.25) !important;
+  /* border-color: rgba(146, 75, 243, 0.25) !important;  */
+}
+.read-more-btn {
+  display: none; 
+  background: none;
+  border: none;
+  color: #5b3478; 
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 0;
+}
+.mobile-hide-text {
+  display: inline;
+}
+
+
+@media (max-width: 991px) {
+
+    .about-head{
+        margin-bottom: 50px;
+    }
+     .about-line{
+        margin-bottom: 30px;
+    }
+     .about-card-info{
+        font-size: 12px;
+    }
+     .about-stats-bar{
+        margin-top: 30px;
+    }
+    .about-left-container p{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    /* .custom-border {
+        border-right: none !important;
+    } */
+
+    .stat-item:nth-child(2)  {
+        border-right: none !important;
+    }
+    .read-more-btn {
+        display: inline-block;
+    }
+
+    .mobile-hide-text {
+        display: none;
+  }
+
+  .mobile-hide-text.show-text {
+    display: inline;
+  }
+
+}

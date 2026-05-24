@@ -1,12 +1,10 @@
 /* Force the entire website layout */
-*{
-  box-sizing: border-box;
-  margin: 0;
-}
-body {
+
+html, body {
   background-color: #121212 !important;
   color: #ffffff !important;    
-  overflow-x: hidden;        
+  overflow-x: hidden; 
+  width:100%;       
 }
 
 :root {

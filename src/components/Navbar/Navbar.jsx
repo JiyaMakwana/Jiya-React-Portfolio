@@ -1,9 +1,28 @@
+import {useState, useEffect} from 'react';
 import "./Navbar.css";
 import "../../index.css";
 
 function Navbar() {
+    const [scrolled, setScrolled]=useState(false);
+
+    useEffect(() => {
+        const handleScroll= () => {
+            if(window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll',handleScroll);
+
+        return() => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    },[]);
+
     return (
-        <nav className="navbar navbar-dark navbar-expand-lg px-0 py-4">
+        <nav className={`navbar navbar-dark navbar-expand-lg px-0 py-4 ${scrolled ? 'scrolled': ""}`}>
             <div className="container">
 
                 {/* LOGO */}

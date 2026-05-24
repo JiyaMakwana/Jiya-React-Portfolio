@@ -1,0 +1,112 @@
+.contact-left-container{
+    position: relative;
+    min-height: 700px;
+}
+.contact-glow-effect{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #04020a 20%, #07030f 100%);
+    filter: blur(60px);
+    z-index: 1; 
+}
+.glow-border{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    border: 3px solid #43245f;
+   box-shadow:
+    0 -10px 30px rgba(67, 36, 95, 0.8),
+    0 -25px 60px rgba(67, 36, 95, 0.5);
+    z-index: 2;
+    
+}
+.card-icon{
+    width:45px;
+    height:45px;
+    border-radius: 8px;
+    background: linear-gradient(
+    90deg,
+    #43245f 25%,
+    #5b3478 50%,
+    #71468f 100%
+    );
+
+}
+.contact-card-png{
+    width:25px;
+    height:25px;
+    color:white;
+    text-align: center;
+}
+
+.contact-video{
+    position:relative;
+    z-index: 2;
+   width: 100%;
+    max-width: 520px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+.contact-head{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-head p{
+    color:darkgray;
+    font-size: 14px;
+}
+.contact-line{
+    width: 90px;
+    height: 8px;
+    background: linear-gradient(
+    90deg,
+    #43245f 25%,
+    #5b3478 50%,
+    #71468f 100%
+    );
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-bottom:50px;
+}
+.contact-card-container{
+    border-radius: 12px;
+    background-color: #1e1e1e;
+}
+.contact-card-container:hover{
+    color: #ffffff;
+    box-shadow:
+    0 4px 18px rgba(238, 236, 240, 0.28);
+    transition: all 0.3s ease;
+}
+.card-title{
+    color:darkgray;
+    font-size: 12px;
+}
+footer{
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #a0aec0;
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+@media (max-width: 991px) {
+    .contact-left-container {
+        min-height: 500px;
+    }
+    .contact-glow-effect, .glow-border {
+        width: 300px;
+        height: 300px;
+    }
+    .contact-video {
+        max-width: 90%;
+    }
+}

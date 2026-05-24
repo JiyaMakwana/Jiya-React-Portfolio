@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Loader from './components/Loader/Loader';
+import About from './components/About/About';
+import Contact from './components/ContactMe/Contact';
 import './App.css';
+
 function App() {
     const [isLoading, setIsLoading]=useState(true);
 
@@ -33,6 +36,8 @@ function App() {
       <div className="app-content">
         <Navbar/>
         <Hero/>
+        <About/>
+        <Contact/>
       </div>
     )
 }
