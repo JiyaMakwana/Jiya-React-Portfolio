@@ -8,7 +8,7 @@ function Hero() {
 
                 <div className="row align-items-center min-vh-100">
                     {/* Left Side */}
-                    <div className="col-lg-8 hero-content">
+                    <div className="col-lg-7 hero-content">
 
                         <p className="hero-greet">
                             WELCOME TO MY PORTFOLIO
@@ -57,7 +57,7 @@ function Hero() {
                     </div>
 
                     {/* Right Side */}
-                    <div className="col-lg-4 hero-video-container">
+                    <div className="col-lg-5 hero-video-container">
                             <div className="hero-video-border">
                                 <video
                                     autoPlay

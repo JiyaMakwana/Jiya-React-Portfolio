@@ -2,8 +2,34 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    /* display: fixed; */
+    animation: navbarReveal 1.2s ease forwards;
+    display: fixed;
 }
+@keyframes navbarReveal{
+
+    0%{
+
+        opacity: 0;
+
+        transform:
+        translateY(-60px)
+        scale(0.95);
+
+        filter: blur(10px);
+    }
+
+    100%{
+
+        opacity: 1;
+
+        transform:
+        translateY(0)
+        scale(1);
+
+        filter: blur(0);
+    }
+}
+
 .navbar-logo{
     background: linear-gradient(
     to right,
@@ -30,6 +56,7 @@
     color:darkgrey;
     font-size: 14px;
     transition: 0.3s ease;
+    
 }
 .navbar-links a:hover{
     color: #ffffff;

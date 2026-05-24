@@ -40,8 +40,8 @@
 }
 .hero-video-border{
     position: relative;
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,13 +60,38 @@
 }
 
 .hero-video{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     object-fit: cover;
     position: relative;
     z-index: 1;
     pointer-events: none;
+}
+
+.hero-content{
+    animation: slideIn 1.5s ease forwards;
+}
+@keyframes slideIn{
+    0%{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-video-container{
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
 }
 
 @keyframes rotateBorder{
