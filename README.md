@@ -1,18 +1,67 @@
-# React + Vite
+# 🌌 Jiya Makwana — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern dark-themed personal portfolio website built to showcase my projects, skills, certifications, and frontend development journey. Designed with clean UI aesthetics, smooth interactions, responsive layouts, and AI-augmented development workflows.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🎨 Modern Dark Purple UI
+- 📱 Fully Responsive Design
+- 🎥 Interactive Project Cards
+- ⚡ Smooth Hover Animations
+- 🧠 AI-Augmented Development Workflow
+- 💼 Projects Showcase
+- 📜 Education & Experience Timeline
+- 📩 Contact Section
+- 🌐 Live Deployment Ready
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+# 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+## Frontend
+- ReactJS
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Bootstrap 5
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Libraries & Tools
+- Font Awesome
+- React Type Animation
+- SwiperJS
+- Git & GitHub
+- VS Code
+- Figma
+
+## Deployment
+- Vercel / Netlify
+
+---
+
+# 📂 Folder Structure
+
+```bash
+src/
+│
+├── assets/
+│
+├── components/
+│   ├── Navbar/
+│   ├── Hero/
+│   ├── About/
+│   ├── Projects/
+│   ├── Experience/
+│   ├── Contact/
+│   └── Footer/
+│
+├── data/
+│   ├── project-data.js
+│   └── about-data.js  
+│   └── skills-data.js
+│   └── contact-data.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
