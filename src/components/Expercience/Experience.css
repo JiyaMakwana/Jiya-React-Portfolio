@@ -1,0 +1,367 @@
+/* Experience.css */
+
+.experience-section{
+    padding: 100px 0;
+}
+
+
+
+/* =========================
+   HEADING
+========================= */
+
+.experience-head{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    margin-bottom:70px;
+}
+
+.experience-head h1{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    color:white;
+
+    letter-spacing:-1px;
+}
+
+.experience-head p{
+
+    color:#9f9f9f;
+
+    font-size:1rem;
+
+    margin-top:8px;
+}
+
+.experience-line{
+
+    width:90px;
+    height:6px;
+
+    border-radius:999px;
+
+    margin-top:14px;
+
+    background:linear-gradient(
+      90deg,
+      #43245f,
+      #71468f,
+      #b57edc
+    );
+}
+
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline-container{
+
+    position:relative;
+
+    max-width:950px;
+
+    margin:auto;
+}
+
+.timeline-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:28px;
+    top:0;
+
+    width:2px;
+    height:100%;
+
+    background:linear-gradient(
+      to bottom,
+      #43245f,
+      #71468f,
+      #b57edc
+    );
+}
+
+
+
+/* =========================
+   TIMELINE ITEM
+========================= */
+
+.timeline-item{
+
+    position:relative;
+
+    display:flex;
+
+    gap:28px;
+
+    margin-bottom:42px;
+}
+
+
+
+/* =========================
+   ICON
+========================= */
+
+.timeline-icon{
+
+    width:56px;
+    height:56px;
+
+    min-width:56px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+      135deg,
+      #4d236d,
+      #71468f,
+      #b57edc
+    );
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+    font-size:18px;
+
+    z-index:2;
+
+    box-shadow:
+      0 0 25px rgba(113,70,143,0.35);
+}
+
+
+
+/* =========================
+   CONTENT CARD
+========================= */
+
+.timeline-content{
+
+    flex:1;
+
+    background: linear-gradient(
+      145deg,
+      rgba(17,17,17,0.96),
+      rgba(28,18,36,0.96)
+    );
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    border-radius:24px;
+
+    padding:28px;
+
+    transition:0.35s ease;
+
+    backdrop-filter: blur(12px);
+}
+
+.timeline-content:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(113,70,143,0.4);
+
+    box-shadow:
+      0 10px 35px rgba(91,52,120,0.22);
+}
+
+
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+.timeline-content h3{
+
+    color:white;
+
+    font-weight:700;
+
+    font-size:1.5rem;
+
+    margin-bottom:8px;
+}
+
+.timeline-content h5{
+
+    color:#b57edc;
+
+    font-size:1.05rem;
+
+    margin-bottom:6px;
+}
+
+.timeline-content span{
+
+    color:#8f8f8f;
+
+    font-size:14px;
+}
+
+.timeline-content p{
+
+    color:#d1d5db;
+
+    margin-top:14px;
+
+    line-height:1.8;
+}
+
+
+
+/* =========================
+   LIST
+========================= */
+
+.timeline-content ul{
+
+    margin-top:18px;
+
+    padding-left:18px;
+}
+
+.timeline-content li{
+
+    color:#cfcfcf;
+
+    margin-bottom:12px;
+
+    line-height:1.7;
+}
+
+
+
+/* =========================
+   STATS SECTION
+========================= */
+
+.stats-row{
+    margin-top:65px;
+}
+
+.stats-card{
+
+    background: linear-gradient(
+      145deg,
+      rgba(17,17,17,0.96),
+      rgba(28,18,36,0.96)
+    );
+
+    border:1px solid rgba(255,255,255,0.05);
+
+    border-radius:24px;
+
+    padding:42px 20px;
+
+    text-align:center;
+
+    transition:0.35s ease;
+
+    height:100%;
+
+    backdrop-filter: blur(10px);
+}
+
+.stats-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(113,70,143,0.4);
+
+    box-shadow:
+      0 10px 35px rgba(91,52,120,0.22);
+}
+
+
+
+/* =========================
+   STATS TEXT
+========================= */
+
+.stats-card h1{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    background:linear-gradient(
+      90deg,
+      #71468f,
+      #b57edc
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.stats-card p{
+
+    color:#9ca3af;
+
+    margin-bottom:0;
+
+    font-size:1rem;
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .experience-section{
+        padding:80px 0;
+    }
+
+    .experience-head h1{
+        font-size:2.8rem;
+    }
+
+    .experience-head p{
+        text-align:center;
+    }
+
+    .timeline-container::before{
+        left:24px;
+    }
+
+    .timeline-item{
+        gap:18px;
+    }
+
+    .timeline-content{
+        padding:22px;
+    }
+
+    .timeline-content h3{
+        font-size:1.2rem;
+    }
+
+    .timeline-content h5{
+        font-size:0.95rem;
+    }
+
+    .stats-card h1{
+        font-size:3rem;
+    }
+
+}

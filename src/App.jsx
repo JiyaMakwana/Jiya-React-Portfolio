@@ -4,6 +4,9 @@ import Hero from './components/Hero/Hero';
 import Loader from './components/Loader/Loader';
 import About from './components/About/About';
 import Contact from './components/ContactMe/Contact';
+import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Project';
+import Experience from './components/Expercience/Experience';
 import './App.css';
 
 function App() {
@@ -37,6 +40,9 @@ function App() {
         <Navbar/>
         <Hero/>
         <About/>
+        <Skills/>
+        <Projects/>
+        <Experience/>
         <Contact/>
       </div>
     )

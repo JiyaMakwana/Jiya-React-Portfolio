@@ -53,7 +53,7 @@ function Navbar() {
                         <a href="#skills" >Skills</a>
                         <a href="#projects">Projects</a>
                         <a href="#experience">Experience</a>
-                        <a href="#education">Education</a>
+                        <a href="#experience">Education</a>
                         <a href="#contact">Contact</a>
                         {/* RESUME BUTTON */}
                         <div className="navbar-resume text-center mx-4">

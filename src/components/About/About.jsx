@@ -1,5 +1,5 @@
 import "./About.css";
-import React,{useState}from 'react';
+import {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { aboutCards } from '../../data/about-data.js';
 
